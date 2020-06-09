@@ -1,0 +1,21 @@
+body{
+    background-image: url("../imgcss/photo-1542044896530-05d85be9b11a.jpg"); /* moi ../ la 1 lan qua*/
+    background-repeat: no-repeat; /*anh khong bi lap lai*/
+    background-position: center; /* vi tri anh */
+    background-size: cover; /* dang anh vua luon man hinh*/
+}
+h1{
+    font-size: 100px;
+    font-family: Be Vietnam;/* vao gg font luu link o embed copy link */
+    font-weight: 400;/*do nangwj chu 100 200 300 400(normal)500 600 700(bold) 800 900 */
+    line-height: 1;
+    text-decoration: line-through;
+    /*underlone line-through overline none */
+    color: darkblue; /* rgba(255,17,34) */ /* mau chu */
+    background-color: darkmagenta; /* mau nen */
+    border: 10px solid #ff112290; /*duong bien xung quanh vien */
+    /*border-bottom: 10px solid #ff112290; /* duong nen duoi*/
+    /*border-top:10px solid #ff112290; /* duong nen tren */
+    text-align: center;
+    /* left right justify center */
+}

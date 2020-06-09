@@ -1,0 +1,11 @@
+body{
+    font-family: "Times New Roman";
+    width: 600px;
+    margin: 0px auto;
+}
+
+#p1{
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 15px;
+}
