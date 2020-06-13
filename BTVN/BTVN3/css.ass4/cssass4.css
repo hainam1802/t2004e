@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+header{
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+.header,.main,.footer{
+    float: left;
+    width: 100%;
+}
+
+.header-left{
+    float: left;
+    width: 40%;
+}
+.menu li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    padding: 10px 0;
+}
+.menu li:first-child{
+    list-style: none;
+}
+.menu li a{
+    font-size: 18px;
+    float: left;
+    text-transform: capitalize;
+    color: #cccccc;
+    font-weight: 200;
+}
+a{
+    text-decoration: none;
+}
+
+/*phan2*/
+
+.join{
+    box-sizing: border-box;
+    width: 70px;
+    height: 30px;
+    background-color: #96f8e3;
+    float: right;
+    border-radius: 60px;
+    margin:10px;
+}
+p{
+    padding: 8px;
+    border-radius: 1.5px;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #96f8e3;
+}
+.log{
+    box-sizing: border-box;
+    float: right;
+    width: 65px;
+    height: 30px;
+    margin: 10px;
+}
+.search{
+    box-sizing: border-box;
+    float: right;
+    margin-left: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #cccccc;
+    border-radius: 60px;
+    margin: 10px;
+}
+.join p{
+    text-align: center;
+    padding-top: 5px;
+}
+.log p{
+    text-align: center;
+    padding-top: 5px;
+}
+.search p{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.header-center{
+    width: 100px;
+}
+.center{
+    width: 50px;
+    height: 50px;
+    background-color: #96f8e3;
+    border-radius: 100%;
+    float: right;
+    margin-right: 250px;
+}
+
+
+/*section*/
+/*Capony12*/
+
+.container2{
+    width: 1349px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Canopy{
+    width: 1200px;
+    height: 100px;
+    background-color: #96f8e3;
+}
+.Canopy a{
+    position: absolute;
+    right: 20px;
+    top:35px;
+}
+.Canopy2{
+    width: 100%;
+    height: 121px;
+    background-color: #96f8e3;
+}
+.learn,.find,.Join{
+    width: 33.3333%;
+    height: 120px;
+    background-color: #96f8e3;
+    float: left;
+    border: 1px solid slategray;
+}
+.learn a,.find a,.Join a{
+    text-align: center;
+    padding: 35px;
+    font-size: 25px;
+    color: #333333;
+}
+
+/*Capony3*/
+.Canopy3{
+    width: 100%;
+    height: 50px;
+
+}
+.c3 li{
+    float: left;
+    margin-left: 35px;
+    list-style: none;
+    padding: 10px 0;
+}
+.c3 li:first-child{
+    list-style: none;
+}
+.c3 li a{
+    font-size: 16px;
+    float: left;
+    text-transform: capitalize;
+    color: darkgray;
+    font-weight: 200;
+}
+/*Canopy4*/
+.Canopy4{
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+
+}
+.pic{
+    width: 30%;
+    height: 400px;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    background-color: white;
+}
+.money{
+    position: absolute;
+    width: 25%;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background-color: #96f8e3;
+}
+.pic img {
+    width: 100%;
+    height: 400px;
+}
+.last{
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    bottom: 0;
+    left: 10px;
+    background-color: #F14576;
+}
+.heart{
+    position: absolute;
+    width: 25%;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+.add{
+    position: absolute;
+    width: 25%;
+    height: 50px;
+    top: 0;
+    left: 40px;
+}
+.mess{
+    position: absolute;
+    width: 25%;
+    height: 50px;
+    top: 0;
+    right: 40px;
+}
+.cycle{
+    position: absolute;
+    left: 50px;
+    top:50px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.Canopy4 img{*/
+/*    float: left;*/
+/*    width: 30%;*/
+/*    height: 350px;*/
+/*    float: left;*/
+/*    margin-left: 40px;*/
+/*    position: relative;*/
+/*}*/
+/*p1{*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background-color: #96f8e3;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*}*/
+
+
+/*!*Canopy5*!*/
+/*.Canopy5{*/
+/*    width: 95%;*/
+/*    height: 100px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.Canopy5 img{*/
+/*    float: left;*/
+/*    width: 30%;*/
+/*    height: 350px;*/
+/*    float: left;*/
+/*    margin: 40px 0px 40px 40px;*/
+/*}*/
+
