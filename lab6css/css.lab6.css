@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    font-size: 12px;
+}
+.container{
+    width: 100%;
+    height: 1000px;
+    background-color: #F14576;
+    position: relative;
+    background-image: linear-gradient(to bottom right, blue, violet);
+}
+.content{
+    width: 50%;
+    height: 620px;
+    background-color: white;
+    margin-left: 350px;
+    margin-top: 20px;
+    position: absolute;
+}
+.event{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.first{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.second{
+    width: 90%;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: white;
+}
+.second-1{
+    width: 20%;
+    height: 70px;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.second-2{
+    width: 35%;
+    height: 70px;
+    background-color: white;
+    float: left;
+
+}
+.second-2-1{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.second-2-1-text{
+    width: 100%;
+    height: 40px;
+    font-style: 20px;
+    padding-left: 10px;
+    background-color: #eeeeee;
+    border-color: white;
+    border-radius: 5px;
+}
+.second-3{
+    width: 35%;
+    height: 70px;
+    background-color: white;
+    float: left;
+    margin-left: 35px;
+}
+
+.third{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: white;
+    position: relative;
+}
+.third-1{
+    width: 75%;
+    height: 70px;
+    float: left;
+}
+.third-1-text{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #eeeeee;
+    border-color: white;
+    border-radius: 5PX;
+}
+.four{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: white;
+}
+.four-1{
+    width: 75%;
+    height: 70px;
+    float: left;
+}
+.four-1-text{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #eeeeee;
+    border-color: white;
+    border-radius: 5px;
+}
+.five{
+    width: 90%;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.five-1{
+    width: 15%;
+    height: 70px;
+    background-color: white;
+    float: left;
+
+}
+.five-1-1{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.five-1-1-text{
+    width: 100%;
+    height: 40px;
+    font-style: 20px;
+    padding-left: 10px;
+    background-color: #eeeeee;
+    border-color: white;
+    border-radius: 5px;
+}
+.five-2{
+    width: 55%;
+    height: 70px;
+    background-color: white;
+    float: left;
+    margin-left: 35px;
+}
+.five-2-1{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.six{
+    width: 90%;
+    height: 70px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.six-1{
+    width: 75%;
+    height: 40px;
+    float: left;
+
+}
+.six-1-1{
+    width: 100%;
+    height: 40px;
+    float: left;
+    padding-left: 10px;
+    color: dimgray;
+    background-color: #eeeeee;
+    border-color: white;
+    border-radius: 5PX;
+}
+.seven{
+    width: 60%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.seven-1{
+    width: 30%;
+    height: 20px;
+}
+.seven-2{
+    width: 50%;
+    height: 20px;
+    margin-top: 10px;
+
+}
+.seven-2-1{
+    height: 20px;
+    width: 50%;
+    float: left;
+}
+.seven-2-2{
+    height: 20px;
+    width: 50%;
+    float: left;
+
+}
+.eight{
+    width: 20%;
+    height: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    background-color: #ff253a;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+}
+.eight-1{
+    left: 30px;
+    top: 15px;
+    position: absolute;
+}

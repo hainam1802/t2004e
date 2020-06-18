@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data</title>
+    <link rel="stylesheet" type="text/css" href="form/form.css"/>
+    <script src="https://kit.fontawesome.com/7d186d09cd.js" crossorigin="anonymous"></script>
+</head>
+<br>
+    <form method="get" action="#"></form></br> <!-- Method Cách lắng nghe chỉ có 2 phương thức (get lưu dữ liệu về post đẩy thông tin lên) action: nơi lắng nghe yêu cầu-->
+        <label><i class="fas fa-user-alt">Username</i></label></br>
+        <input type="text" class="input-text" name="username" placeholder="username.." required/> </br></br><!--  ki để phản hồi. chỗ người dùng điền input-->
+        <input type="email" name="email" placeholder="Email.." required/> </br></br><!-- bắt người dùng nhâp thì mới đưuọc-->
+        <input type="password" name="user_password" placeholder="Password" required/></br></br>
+        <label><input type="checkbox" name="ready"/>I'm ready</label>  </br></br><!--label bấm phần nào cũng tích-->
+        <label><input type="radio" name="sex"value="male"/>Male </label></br></br> <!--trong trường hợp người ra có nhiều lựa chọn-->
+        <label><input type="radio" name="sex" value="female"/>Female </label></br></br>
+        <label><input type="radio" name="sex" value="other"/>Other </label></br></br> <!--đưa sex về sex1,2,3 để tích từng cái-->
+        </br>
+        <input type="date" name="birthday" placeholder="Ngày sinh"/></br></br>
+        <input type="color" name="my_color" placeholder="Color...."/></br></br>
+        <input type="time" name="time" placeholder="Giờ sinh"/></br></br>
+        <input type="month" name="month" placeholder="Tháng sinh"/></br></br>
+        <input type="number" name="money" placeholder="Money...."/></br></br>  <!--ko viết được chữ-->
+        <input type="range" name="volumes" min="0" max="100" placeholder="Volumnes...">
+        <input type="file" name="avatar" placeholder="Avartar"/></br></br>
+           <input type="hidden" name="_token" value="sadsadsad">
+        <select name="faculty">
+        <option value="toan">Tóan</option>
+        <option value="dientu">Điện tử</option>
+        <option value="cntt">Công nghệ thông tin</option>
+
+        </select></br></br>
+
+        <textarea name="tieusubanthan" placeholder="Tiểu sử bản thân....">
+
+        </textarea>  </br></br> <!--kéo dãn được ô-->
+"
+
+        <button type="submit">Submit</button> </br></br><!--nút để gửi đi-->
+        <button type="reset">Reset</button> </br></br><!--bắt nhập lại-->
+        <button type="button">button</button></br></br> <!--dùng cho nút cần hiệu ứng cho javascpipt-->
+    </br>
+</body>
+</html>
