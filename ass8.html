@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass8</title>
+</head>
+<body>
+    <h1 id = "heading"> Yêu cầu giao diện cần có </h1>
+    <p id="subheading-1">Tên thành phố, quốc gia: </p>
+    <p id="subheading-2">Nhiệt độ: </p>
+    <p id="subheading-3">Áp suất: </p>
+    <p id="subheading-4">Độ ẩm: </p>
+    <p id="subheading-5">Nhiệt độ thấp nhất - cao nhất: </p>
+    <p id="subheading-6">Mực nước biển: </p>
+<script type="text/javascript">
+    var currentWeather = {
+        coord:{
+            lon:139.01,
+            lat:35.02
+        },
+        weather:
+            [
+                {
+                    id :800,
+                    main : "Clear" ,
+                    description : "clear sky , icon : 01n"
+                }
+            ],
+        base : "stations",
+        main :{
+            temp :285.514,
+            pressure :1013.75,
+            humidity :100,
+            temp_min :285.514,
+            temp_max :285.514,
+            sea_level :1023.22,
+            grnd_level :1013.75
+        },
+        wind :{
+            speed :5.52,
+            deg :311
+        },
+        clouds :{
+            all :0
+        },
+        dt :1485792967,
+        sys :{
+            message :0.0025,
+            country : "JP" ,
+            sunrise :1485726240,
+            sunset :1485763863
+        },
+        id :1907296,
+        name : "Tawarano",
+        cod :200
+    };
+    let p_s1 = document.getElementById("subheading-1");
+    p_s1.innerText = p_s1.innerText+ currentWeather.name;
+    let p_s2 = document.getElementById("subheading-2");
+    p_s2.innerText = p_s2.innerText+ currentWeather.main.temp;
+    let p_s3 = document.getElementById("subheading-3");
+    p_s3.innerText = p_s3.innerText+ currentWeather.main.pressure;
+    let p_s4 = document.getElementById("subheading-4");
+    p_s4.innerText = p_s4.innerText+ currentWeather.main.humidity;
+    let p_s5 = document.getElementById("subheading-5");
+    p_s5.innerText = p_s5.innerText+ currentWeather.main.temp_min+-currentWeather.main.temp_max;
+    let p_s6 = document.getElementById("subheading-6");
+    p_s6.innerText = p_s6.innerText+ currentWeather.main.sea_level;
+
+
+</script>
+
+
+</body>
+</html>

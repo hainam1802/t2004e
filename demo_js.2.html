@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demi JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let obj = {
+            name: "Nguyen Van An",                //ko dc dung cham phay
+            age : 18,
+            address : "8 Ton that Thuyet",
+            // run : function () {
+            //         console.log("Running...");
+            // run : function ($str) {
+            //     console.log($str + " is Running...");
+            run : function () {
+                console.log(this.name + " is Running..."); //this dunfg trong phamj vi ngoặc nhọn
+            },
+            girlFriends : [
+                "Ngoc Trinh", "Phuong Trinh"
+            ],
+            gotoHotel : function(){
+                // for (let i=0;i<this.girlFriends.length;i++){
+                //     console.log("Di hotel voi" + this.girlFriends[i]);
+                // }
+                this.girlFriends.map(function (e) {
+                    console.log("Di hotel voi "+ e);
+                })
+            },
+            children : {
+                name : "Nguyen Van Binh",
+                birthday : "22-5-1999",
+                children: {
+                    name : "Nguyen van Nam",
+                    eat : function () {
+                        console.log("Uong sua");
+                        return this;
+                    },
+                    sleep : function () {
+                        console.log("di ngu...");
+                        return this;
+                    }
+                }
+            }
+        };                                      //ngoặc nhọn là khu vực khai báo đối tượng
+        console.log(obj.name);
+        console.log(obj.address);
+        // obj.run(obj.name);
+        obj.run();
+        console.log("ten cu con la "+ obj.children.name)
+        console.log("ten cua chau " + obj.children.children.name);
+        obj.children.children.eat();
+        obj.children.children.sleep();
+        obj.children.children.eat().sleep();
+        obj.name= "Nguyen Van Anh";  //thay đổi thông tin
+        console.log(obj.name);
+
+        let classobj = {
+            name : T2004E,
+            room : 18,
+            teacher : {
+                name : "Trinh Quang Hoa",
+                age : 30,
+            },
+            dssv : [
+                 {
+                    name : "Le Anh A",
+                    age : 18,
+                    sbd : 1
+                },
+                student2 : {
+                    name : Le Anh B,
+                    age : 18,
+                    sbd : 2
+                }
+                student3 : {
+                    name : Le Anh C,
+                    age : 18,
+                    sbd : 3
+                }
+                student4 : {
+                    name : Le Anh D,
+                    age : 18,
+                    sbd : 4
+                }
+                student5 : {
+                    name : Le Anh E,
+                    age : 18,
+                    sbd : 5
+                }
+                student6 : {
+                    name : Le Anh F,
+                    age : 18,
+                    sbd : 6
+                }
+                student7 : {
+                    name : Le Anh G,
+                    age : 18,
+                    sbd : 7
+                }   student8 : {
+                    name : Le Anh H,
+                    age : 18,
+                    sbd : 8
+                }   student9 : {
+                    name : Le Anh I,
+                    age : 18,
+                    sbd : 9
+                },
+                student10 : {
+                    name : Le Anh K,
+                    age : 18,
+                    sbd : 10
+                },
+                student11 : {
+                    name : Le Anh L,
+                    age : 18,
+                    sbd : 11
+                },
+                student12 : {
+                    name : Le Anh M,
+                    age : 18,
+                    sbd : 12
+                } ,
+                student13 : {
+                    name : Le Anh N,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }   student1 : {
+                    name : Le Anh A,
+                    age : 18,
+                    sbd : 1
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+        }
+    </script>
+</body>
+</html>
