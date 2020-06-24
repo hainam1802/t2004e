@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab s9</title>
+    <link rel="stylesheet" href="labs9.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="container1" >
+        <div class="content">
+            <div id="home" onclick="homeclick()">Home</div>
+            <div id="profile" onclick="homeclickProfile()">Profile</div>
+            <div id="messages" onclick="homeclickThree()">Messages</div>
+            <div id="setting" onclick="homeclickFour()">Settings</div>
+         </div>
+         <div class="content1">
+            <div id="this1" class="this"><p>this is home content</p></div>
+            <div  id="this2" class="this">this is proflie content</div>
+            <div  id="this3" class="this">this is messages content</div>
+            <div  id="this4" class="this">this is setting content</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function homeclick() {
+        document.getElementById("this1").style.display = "block";
+        document.getElementById("this2").style.display = "none";
+        document.getElementById("this3").style.display = "none";
+        document.getElementById("this4").style.display = "none";
+    }
+    function homeclickProfile() {
+        document.getElementById("this2").style.display = "block";
+        document.getElementById("this1").style.display = "none";
+        document.getElementById("this3").style.display = "none";
+        document.getElementById("this4").style.display = "none";
+    }
+    function homeclickThree() {
+        document.getElementById("this3").style.display = "block";
+        document.getElementById("this1").style.display = "none";
+        document.getElementById("this2").style.display = "none";
+        document.getElementById("this4").style.display = "none";
+    }
+    function homeclickFour() {
+        document.getElementById("this4").style.display = "block";
+        document.getElementById("this1").style.display = "none";
+        document.getElementById("this2").style.display = "none";
+        document.getElementById("this3").style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>

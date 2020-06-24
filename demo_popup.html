@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Popup</title>
+    <link rel="stylesheet" href="popup.css" type="text/css"/>
+</head>
+<body>
+<!--    <button class="btn" onclick="popup()">Open Popup</button>-->
+<!--    <div id="popup" onclick="closePopup()">-->
+<!--        <img src="imgcss/103142694_280622339753879_4125492848525176075_n.jpg">-->
+<!--    </div>-->
+<!--    <div id="bg-fade" onclick="closePopup()"></div>-->
+<!--<script type="text/javascript">-->
+<!--    function popup() {-->
+<!--        document.getElementById("popup").style.display = "block";-->
+<!--        document.getElementById("bg-fade").style.display = "block";-->
+<!--    }-->
+<!--    function closePopup() {-->
+<!--        document.getElementById("popup").style.display = "none";-->
+<!--        document.getElementById("popup").style.display = "none";-->
+<!--    }-->
+<!--    -->
+<!--</script>-->
+<button class="btn" onclick="popup()">Open Popup</button>
+<div id="popup" onclick="closePopup()">
+    <img src="imgcss/103142694_280622339753879_4125492848525176075_n.jpg">
+</div>
+<div class="bg-fade" onclick="closePopup()"></div>
+
+<script type="text/javascript">
+    function popup()  {
+        document.getElementById("popup").style.opacity="1";
+        document.getElementById("bg-fade").style.opacity="1";
+        document.getElementById("popup").style.zIndex="10";
+        document.getElementById("bg-fade").style.zIndex="9";
+    }
+    function closePopup() {
+        document.getElementById("popup").style.zIndex="-1";
+        document.getElementById("bg-fade").style.zIndex="-2";
+        document.getElementById("popup").style.opacity="0";
+        document.getElementById("bg-fade").style.opacity="0";
+    }
+</script>
+
+
+</body>
+</html>
