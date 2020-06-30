@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ass10</title>
+    <link rel="stylesheet" href="ass10.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="content">
+                <div class="slideshow-container">
+                    <div class="mySlides1">
+                        <img src="imgass1/1.jpg" style="width:100%; height: 300px;">
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="imgass1/2.jpg" style="width:100%; height: 300px;">
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="imgass1/3.jpg" style="width:100%; height: 300px;">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, n1) {
+            showSlides(slideIndex[n1] += n, n1);
+        }
+
+        function showSlides(n, n1) {
+            var i;
+            var x = document.getElementsByClassName(slideId[n1]);
+            if (n > x.length) {slideIndex[n1] = 1}
+            if (n < 1) {slideIndex[n1] = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[n1]-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
