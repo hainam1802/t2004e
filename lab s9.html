@@ -6,49 +6,81 @@
     <link rel="stylesheet" href="labs9.css" type="text/css"/>
 </head>
 <body>
-<div class="container">
-    <div class="container1" >
-        <div class="content">
-            <div id="home" onclick="homeclick()">Home</div>
-            <div id="profile" onclick="homeclickProfile()">Profile</div>
-            <div id="messages" onclick="homeclickThree()">Messages</div>
-            <div id="setting" onclick="homeclickFour()">Settings</div>
-         </div>
-         <div class="content1">
-            <div id="this1" class="this"><p>this is home content</p></div>
-            <div  id="this2" class="this">this is proflie content</div>
-            <div  id="this3" class="this">this is messages content</div>
-            <div  id="this4" class="this">this is setting content</div>
-        </div>
+<!--<div class="container">-->
+<!--    <div class="container1" >-->
+<!--        <div class="content2">Xac dinhj vi tri</div>-->
+<!--        <div class="content">-->
+<!--            <div id="home" onclick="homeclick()">Home</div>-->
+<!--            <div id="profile" onclick="homeclickProfile()">Profile</div>-->
+<!--            <div id="messages" onclick="homeclickThree()">Messages</div>-->
+<!--            <div id="setting" onclick="homeclickFour()">Settings</div>-->
+<!--         </div>-->
+<!--         <div class="content1">-->
+<!--            <div id="this1" class="this"><p>this is home content</p></div>-->
+<!--            <div  id="this2" class="this">this is proflie content</div>-->
+<!--            <div  id="this3" class="this">this is messages content</div>-->
+<!--            <div  id="this4" class="this">this is setting content</div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<script type="text/javascript">-->
+<!--    function homeclick() {-->
+<!--        document.getElementById("this1").style.display = "block";-->
+<!--        document.getElementById("this2").style.display = "none";-->
+<!--        document.getElementById("this3").style.display = "none";-->
+<!--        document.getElementById("this4").style.display = "none";-->
+<!--    }-->
+<!--    function homeclickProfile() {-->
+<!--        document.getElementById("this2").style.display = "block";-->
+<!--        document.getElementById("this1").style.display = "none";-->
+<!--        document.getElementById("this3").style.display = "none";-->
+<!--        document.getElementById("this4").style.display = "none";-->
+<!--    }-->
+<!--    function homeclickThree() {-->
+<!--        document.getElementById("this3").style.display = "block";-->
+<!--        document.getElementById("this1").style.display = "none";-->
+<!--        document.getElementById("this2").style.display = "none";-->
+<!--        document.getElementById("this4").style.display = "none";-->
+<!--    }-->
+<!--    function homeclickFour() {-->
+<!--        document.getElementById("this4").style.display = "block";-->
+<!--        document.getElementById("this1").style.display = "none";-->
+<!--        document.getElementById("this2").style.display = "none";-->
+<!--        document.getElementById("this3").style.display = "none";-->
+<!--    }-->
+    <ul class="tab">
+        <li><a href="javascript: void(0);" onclick="navTab(0)">Home</a></li>
+        <li><a href="javascript: void(0);" onclick="navTab(1)">Profile</a></li>
+        <li><a href="javascript: void(0);" onclick="navTab(2)">Messages</a></li>
+        <li><a href="javascript: void(0);" onclick="navTab(3)">Setting</a></li>
+    </ul>
+    <div class="content">
+        <div id="home" class="tab_content">Home content</div>
+        <div id="profile" class="tab_content">Profile content</div>
+        <div id="messages" class="tab_content">Messages content</div>
+        <div id="setting" class="tab_content">Setting content</div>
     </div>
-</div>
 <script type="text/javascript">
-    function homeclick() {
-        document.getElementById("this1").style.display = "block";
-        document.getElementById("this2").style.display = "none";
-        document.getElementById("this3").style.display = "none";
-        document.getElementById("this4").style.display = "none";
+    function navTab(e) {
+        //     let tabs = document.getElementsByClassName("tab_content");
+        //     for (let i=0;i<tabs.length;i++){
+        //         tabs[i].style.display= "none";
+        //     }
+        //     document.getElementById(e).style.display= "block";
+        // }
     }
-    function homeclickProfile() {
-        document.getElementById("this2").style.display = "block";
-        document.getElementById("this1").style.display = "none";
-        document.getElementById("this3").style.display = "none";
-        document.getElementById("this4").style.display = "none";
-    }
-    function homeclickThree() {
-        document.getElementById("this3").style.display = "block";
-        document.getElementById("this1").style.display = "none";
-        document.getElementById("this2").style.display = "none";
-        document.getElementById("this4").style.display = "none";
-    }
-    function homeclickFour() {
-        document.getElementById("this4").style.display = "block";
-        document.getElementById("this1").style.display = "none";
-        document.getElementById("this2").style.display = "none";
-        document.getElementById("this3").style.display = "none";
-    }
-
-
+    // document.getElementById("content_all").style.transform = "translateX(-"+(e*400)+"px)";
+    // setTimeout(function () {
+    //     alert("Co nguoi dot nhap");
+    // },3000);
+    let f=0;
+    var stv = setInterval(function () {
+        alert("1 nguoi vya vao web");
+        f++;
+        if(f>4){
+            clearInterval(stv);
+        }
+    },3000);
 </script>
 </body>
 </html>

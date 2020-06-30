@@ -1,44 +1,75 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
+/**{*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*body {*/
+/*    font-size: 14px;*/
+/*    font-weight: 400;*/
+/*    line-height: 1.5;*/
 
-    letter-spacing: 1.5px;
-    word-spacing: 1.5px;
-}
-a{
-    text-decoration: none;
-}
-.container{
+/*    letter-spacing: 1.5px;*/
+/*    word-spacing: 1.5px;*/
+/*}*/
+/*a{*/
+/*    text-decoration: none;*/
+/*}*/
+/*.container{*/
+/*    width: 100%;*/
+/*    background-color: black;*/
+/*    height: 800px;*/
+/*    position: relative;*/
+/*    padding-top: 150px;*/
+/*}*/
+/*.container1{*/
+/*    background-color: white;*/
+/*    width: 50%;*/
+/*    height: 300px;*/
+/*    margin: auto;*/
+/*}*/
+/*.content{*/
+/*    width: 100%;*/
+/*    background-color: white;*/
+/*}*/
+/*.con*/
+/*#home,#profile,#messages,#setting{*/
+/*    width: 25%;*/
+/*    height: 50px;*/
+/*    float: left;*/
+/*    border: 1px solid black;*/
+/*    text-align: center;*/
+/*    padding-top: 15px;*/
+/*}*/
+/*.this {*/
+/*    display: none;*/
+/*}*/
+.tab{
+    float: left;
     width: 100%;
-    background-color: black;
-    height: 800px;
-    position: relative;
-    padding-top: 150px;
 }
-.container1{
-    background-color: white;
-    width: 50%;
-    height: 300px;
-    margin: auto;
+.tab li{
+    float: left;
+    margin-right: 20px;
 }
 .content{
-    width: 100%;
-    background-color: white;
-}
-#home,#profile,#messages,#setting{
-    width: 25%;
-    height: 50px;
     float: left;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 15px;
+    width:400px;
+    height: 200px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
 }
-.this {
-    display: none;
+.content_all{
+    float: left;
+    width: 1600px;
+    height: 200px;
+    transition: all 300ms;
 }
+.tab_content{
+    float: left;
+    width: 400px;
+    height: 200px;
+
+}
+/*#home{*/
+/*    display: block;*/
+/*}*/
