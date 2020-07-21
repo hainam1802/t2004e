@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab13</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/font-sware">
+    <link rel="stylesheet" type="text/css" href="lab13.css">
+
+
+
+</head>
+<body>
+    <select id="select">
+        <option value="Hanoi,vietnam">Hanoi</option>
+        <option value="Saigon,vietnam">Saigon</option>
+        <option value="haiphong,vietnam">haiphong</option>
+        <option value="London,uk">London</option>
+    </select>
+    <h1 id="city">Tên Tp </h1>
+    <p id="temp">Nhiệt độ: </p>
+    <p id="time">Thời gian: </p>
+    <p id="des">Miêu tả </p>
+    <ul id="info"></ul>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        let api_url = "http://api.openweathermap.org/data/2.5/forecast";
+        $.ajax({
+            url: api_url,
+            method: "GET",
+            data:{
+                q:"Hanoi,vietnam",
+                appid:"09a71427c59d38d6a34f89b47d75975c",
+                units:"metric"
+            },
+            // success: function (rs) {
+            //     $("#city").text(rs.city.name);
+            //     $("#temp").text(rs.list[0].main.temp);
+            //     $("#time").text(rs.list[0].dt_txt);
+            //     $("#des").text(rs.list[0].weather[0].description);
+            // }
+            // success: function(rs) {
+            //     $("#city").text(rs.city.name);
+            //     let ls = rs.list;
+            //     let ul= document.getElementById("info")
+            //     for(let i=0; i<ls.length;i++){
+            //         let li_html = "<li>"+ls[i].main.temp+ls[i].dt_txt;
+            //         ul.innerHTML += li_html
+            //     }
+            // }
+
+        });
+
+        $("#select").bind("change",function () {
+            let value = $(this).val();
+            $.ajax({
+                url: api_url,
+                method: "GET",
+                data:{
+                    q:value,
+                    appid:"09a71427c59d38d6a34f89b47d75975c",
+                    units:"metric"
+                },
+                success: function (rs) {
+                    $("#city").text(rs.city.name);
+                    $("#temp").text(rs.list[0].main.temp);
+                    $("#time").text(rs.list[0].dt_txt);
+                    $("#des").text(rs.list[0].weather[0].description);
+                }
+            });
+        })
+
+    </script>
+<section class="section">
+    <div class="container">
+        <h1>Thời tiết hôm nay và ngày mai</h1>
+        <h2>Thành phố: </h2>
+        <div class="row" id="weather">
+        </div>
+    </div>
+</section>
+<section class="section">
+        <div id="map">
+        </div>
+</section>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url: "http://api.openweathermap.org/data/2.5/forecast",
+        method: "GET",
+        data:{
+            q:"Hanoi,vietnam",
+            appid: "09a71427c59d38d6a34f89b47d75975c",
+            units: "metric"
+        },
+        success:function (rs) {
+            $("h2").text(rs.city.name+","+rs.city.country);
+            rs.list.map(function (e) {
+                let item_html = " <div class=\"col-md-3 col-sm-4 col-xs-6\" >\n" +
+                    "                <div class=\"item\">\n" +
+                    "                    <p class=\"datetime\">"+e.dt_txt+"</p>\n" +
+                    "                    <p class=\"temp\"><span>"+e.main.temp+"</span><sup>o</sup>C</p>\n" +
+                    "                    <p class=\"desc\">"+e.weather[0].description+"</p>\n" +
+                    "                    <img src=\"https://openweathermap.org/img/wn/"+e.weather[0].icon+"@2x.png\"/>\n" +
+                    "                </div>\n" +
+                    "            </div>";
+                // $("#weather").html($("#weather").html()+item_html);
+                $("#weather").append(item_html);
+
+            })
+        }
+    });
+    //Map
+    var uluru = {lat: 21.0291361, lng: 105.7796175};
+    var coord = navigator.geolocation.getCurrentPosition(getLocation);
+    function getLocation(position) {
+        uluru = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+        }
+        initMap();
+    }
+
+
+    function initMap() {
+        // // The location of Uluru
+        // var uluru = {lat: 21.0288, lng: 105.7795};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 24, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map,
+        label:"Đại học FPT Hà Nội"});
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+</body>
+</html>

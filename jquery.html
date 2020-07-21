@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo jquery</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <p class="pp">Doan van so 1</p>
+    <p class="pp">Doan van so 2</p>
+    <p class="pp">Doan van so 3</p>
+    <ul class="list">
+        <li>Myf toom</li>
+        <li>banh my</li>
+        <li>Mxooi</li>
+    </ul>
+    <button onclick="Open();">Open</button>
+    <button onclick="Close();">Close</button>
+    <button onclick="Auto()">Auto</button>
+    <button class="move">Move</button>
+<script type="text/javascript">
+    // let px = $("p.pp");
+    // px.css("color","red");
+    $("p.pp").css("color","red");
+    $("ul > li:first-child").css("color","green"); //lay thang thu nhat
+    $("ul li:first-child").next().css("color","orange"); //lay thang thu 2
+    $("ul li:first-child").parent().css("background-color","yellow");
+    $("ul > li:last-child").css({
+        "color":"blue",
+        "background-color":"gray"
+    });
+    // let txt =$("ul li:first-child").text();
+    // $("ul li:first-child").text("day la noi dung moi");
+    // alert(txt);
+    $("ul li:first-child").text($("ul li:first-child").text()+" trung");
+    $("ul li:first-child").html("<h1>banh my trung</h1>");
+    $("ul li:first-child").addClass("active");
+    function Open() {
+        // $(".list").show();
+        // $(".list").fadeIn();
+        $(".list").slideDown();
+    }
+    function Close() {
+        // $(".list").hide();
+        // $(".list").fadeOut();
+        $(".list").slideUp(100);
+    }
+    function Auto() {
+        // $("ul").toggle();
+        // $("ul").slideToggle();
+        $("ul").fadeToggle();
+    }
+    function Move() {
+        if($("ul").hasClass("active")){
+            $("ul").animate({
+                "margin-left":"0px"
+            },500);
+            $("ul").removeClass("active");
+        }
+        else{
+            $("ul").animate({
+                "margin-left":"200px"
+            },500);
+            $("ul").addClass("active");
+        }
+          //tao su dich chuyen
+    }
+    // $(".move").bind("click",function () {
+    //     if($("ul").hasClass("active")){
+    //         $("ul").animate({
+    //             "margin-left":"0px"
+    //         },500);
+    //         $("ul").removeClass("active");
+    //     }
+    //     else{
+    //         $("ul").animate({
+    //             "margin-left":"200px"
+    //         },500);
+    //         $("ul").addClass("active");
+    //     }
+    //               //tao su dich chuyen
+    // })
+    // $(".list").bind("mouseenter",function () {
+    //     console.log("mouse emter list");
+    // });
+</script>
+</body>
+</html>

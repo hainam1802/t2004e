@@ -1,0 +1,24 @@
+/*.a{*/
+/*    width: 800px;*/
+/*    float: left;*/
+/*}*/
+/*.b{*/
+/*    background-color: #2aabd2;*/
+/*    height: 300px;*/
+/*}*/
+/*.c{*/
+/*    background-color: green;*/
+/*    height: 300px;*/
+/*}*/
+/*.d{*/
+/*    background-color: #ff253a;*/
+/*    height: 300px;*/
+/*}*/
+/*.e{*/
+/*    background-color: #96f8e3;*/
+/*    height: 300px;*/
+/*}*/
+.section{
+    float: left;
+    width: 100%;
+}

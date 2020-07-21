@@ -1,5 +1,5 @@
 div{
-    width: calc(50%-20px);
+    width: calc(50%- 20px);
     height: 200px;
     float: left;
     border: 1px solid red;

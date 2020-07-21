@@ -22,7 +22,7 @@ img{
     width: 100%;
 }
 .container{
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 /* aside: rìa */
@@ -34,17 +34,11 @@ img{
 .header-right{
     float: right;
     width: 60%;
-
-
-
 }
 .header-right li{
     text-decoration: none;
 }
-.content{
-    float: left;
-    width: 66.67%;
-}
+
 .sidebar{
     float: right;
     width: 33.33%
@@ -57,14 +51,14 @@ header{
     font-size: 30px;
     font-weight: 700;
     color: #333131;
- }
+}
 .menu li{
     float: right;
     margin-left: 35px;
     /*list-style: none; bỏ dấu chấm*/
     padding: 10px 0;
 }
-.menu li:last-child{
+.menu li{
     list-style: none;
     /*first-child: phần tử đầu tiên*/
 }
@@ -76,11 +70,31 @@ header{
     color: #333131;
     font-weight: 600;
 }
-
-.l.chunhat.button{
-    border: 1px solid white;
-    border-radius: 4px;
-    background: red;
-    font-weight: bold;
-    color: white;
+#contact{
+    color: #96f8e3;
+    width: 60%;
 }
+.form{
+    width: 45%;
+}
+.first{
+    width: 40%;
+    padding-bottom: 100px;
+}
+#contrainer{
+    padding-top: 10%;
+}
+.name{
+    float: left;
+    width: 50%;
+
+
+}
+.mail{
+    float: left;
+    width: 50%;
+}
+.tittle{
+    width: 100%;
+}
+

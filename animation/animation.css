@@ -9,7 +9,7 @@
     height: 200px;
     background-color: deeppink;
     /*transform: translate(100px,200px);*/
-    /*transform: scale(1.15); !*zoom*!*/
+    /*transform: scale(5); !*zoom*!*/
     /*transform: rotate(45deg);!* xoay 45 độ*!*/
     transform: matrix(1,-0.3,0,1,0);
 
